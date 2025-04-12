@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLINIC WEBSITE</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Preconnect and Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="IMAGES/CLINIC IMAGE.jpg" class="logo" alt="Clinic Logo"></a>
+      <!-- Navigation menu -->
+      <div class="nav-links" id="navLinks">
+        <!-- Close (cross) icon inside the menu -->
+        <i class="fa fa-times" id="closeMenu"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="ourdoctors.html">DOCTORS</a></li>
+          <li><a href="timings.html">TIMINGS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+
+        </ul>
+      </div>
+      <!-- Hamburger icon -->
+      <i class="fa fa-bars" id="openMenu"></i>
+    </nav>
+    <div class="text-box">
+      <h1>AVA Maternity and Neuro-Psychiatry Clinic</h1>
+      <p>
+        AVA Maternity and Neuro-Psychiatry Clinic is a multi-specialty healthcare center committed to the complete well-being of both men and women.<br>
+        We offer expert medical care in maternity, infertility, sexual health, and mental wellness — all under one roof.
+      </p>
+      <a href="" class="hero-btn">Visit us to know more</a>
+    </div>
+  </section>
+
+  <!-- Medical Section -->
+  <section class="medical">
+    <h1>Medical Facilities: </h1>
+    <div class="row">
+        <div class="medically">
+          <h3>Obstetrics & Gynaecology</h3>
+          <p>The Obstetrics and Gynaecology department at AVA Clinic provides complete women’s healthcare, covering all stages from adolescence to menopause. The department offers antenatal and postnatal care, infertility assessment and treatment, and routine gynaecological screenings. Specialized services are available for managing menstrual disorders, hormonal imbalances, and menopause-related concerns.<br> The clinic also offers advanced vaginal rejuvenation and female wellness treatments in a comfortable and confidential setting.The clinic ensures accurate, timely care in a safe and supportive environment. </p>
+        </div>
+        <div class="medically">
+          <h3>Neuro-Psychiatry</h3>
+          <p>The Neuro-Psychiatry department at AVA Clinic specializes in the treatment of brain and mind disorders. Whether it's stress, anxiety, depression, or more complex issues, we offer personalized care for everyone. The clinic also provides specialized treatment for male infertility and sexual dysfunction, where mental health plays an important role. Our approach focuses on understanding both the mind and body, ensuring that every patient receives compassionate, professional, and effective care.</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- Doctors Desk -->
+  <section class="doctors">
+    <h1>Our Doctors:  </h1>
+    <div class="row">
+        <div class="doctor-card">
+            <img src="IMAGES/doctors.jpg" alt="Dr. Amrita Sandhu">
+            <div class="layer"></div>
+            <h3> Dr. Amrita Sandhu </h3>
+        </div>
+        <div class="doctor-card">
+            <img src="IMAGES/doctors2.jpg" alt="Dr. Vasdev Kalkat">
+            <div class="layer"></div>
+            <h3> Dr. Vasdev Kalkat </h3>
+        </div>
+    </div>
+  </section>
+
+  <!-- Timings -->
+  <section class="timings">
+    <h1> Timings:</h1>
+    <div class="row">
+        <div class="timingss">
+            <h3>Obstetrics & Gynaecology</h3>
+            <ul>
+              <li>COMING SOON</li>
+            </ul>
+        </div>
+        <div class="timingss">
+            <h3>Neuro-Psychiatry</h3>
+            <ul>
+              <li>COMING SOON</li>
+            </ul>
+        </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h1>Contact us for Appointment</h1>
+    <a href="contact.html" class="hero-btn">CONTACT US</a>
+  </section>
+
+  <!-- Footer -->
+  <section class="footer">
+    <h4> About Us</h4>
+    <p>At AVA Clinic, we are dedicated to providing comprehensive and compassionate healthcare for individuals of all genders, addressing both physical and mental health needs.</p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+    </div>
+    <p>Made by Er. Anushka Sandhu</p>
+  </section>
+
+  <!-- JavaScript for Toggle Menu -->
+  <script>
+    // Wait for DOM content to load
+    document.addEventListener("DOMContentLoaded", function () {
+      var navLinks = document.getElementById("navLinks");
+      var openMenu = document.getElementById("openMenu");
+      var closeMenu = document.getElementById("closeMenu");
+
+      openMenu.addEventListener("click", function () {
+        // Remove transform that hides the menu, sliding it in
+        navLinks.classList.add("active");
+      });
+
+      closeMenu.addEventListener("click", function () {
+        // Add transform class to hide menu off-screen
+        navLinks.classList.remove("active");
+      });
+    });
+  </script>
+
+  <div class="footer">
+    © 2025 AVA Clinic. All Rights Reserved.
+  </div>
+</body>
+</html>
